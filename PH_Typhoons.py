@@ -192,7 +192,7 @@ def app():
         elif pred_period == 72:
             end = '2028-12'
 
-        months = pd.date_range(start='2023-01', end=end, freq='MS')
+        months = pd.date_range(start='2025-01', end=end, freq='MS')
 
         # Create a Pandas DataFrame with the datetime and values columns
         nextyear = pd.DataFrame({'Month': months, 'Typhoons': prednext})
