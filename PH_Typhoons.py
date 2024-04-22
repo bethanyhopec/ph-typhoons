@@ -16,10 +16,9 @@ if "model" not in st.session_state:
 def app():
     st.subheader('RNN-LSTM Based Typhoon Prediction in the Philippines')
     
-    text = """Bethany Hope F. Cabristante BSCS 3A
+    text = """Bethany Hope Cabristante BSCS 3A
     \nCCS 229 - Intelligent Systems
-    *Department of Computer Science
-    *College of Information and Communications Technology
+    College of Information and Communications Technology
     *##West Visayas State University##"""
     st.text(text)
 
@@ -192,7 +191,7 @@ def app():
         elif pred_period == 72:
             end = '2028-12'
 
-        months = pd.date_range(start='2025-01', end=end, freq='MS')
+        months = pd.date_range(start='2023-01', end=end, freq='MS')
 
         # Create a Pandas DataFrame with the datetime and values columns
         nextyear = pd.DataFrame({'Month': months, 'Typhoons': prednext})
